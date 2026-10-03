@@ -1,0 +1,443 @@
+/* =========================
+   Basic Page Styling
+   ========================= */
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f4f4;
+
+    color: #333;
+}
+
+
+/* =========================
+   Header
+   ========================= */
+
+header {
+    background-color: #222;
+
+    color: white;
+
+    padding: 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+/* =========================
+   Navigation
+   ========================= */
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #00aaff;
+}
+
+
+/* =========================
+   Home Page Banner
+   ========================= */
+
+.banner {
+    background-color: #3498db;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 80px 20px;
+}
+
+.banner h2 {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 18px;
+}
+
+
+/* =========================
+   Button
+   ========================= */
+
+button {
+    background-color: white;
+
+    color: #3498db;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    margin-top: 15px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #eeeeee;
+}
+
+
+/* =========================
+   Blog Section - Home Page
+   ========================= */
+
+.blog {
+    background-color: white;
+
+    max-width: 800px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 30px;
+}
+
+
+/* =========================
+   Blog Posts - Home Page
+   ========================= */
+
+.blog-post {
+    background-color: #f4f4f4;
+
+    margin-top: 30px;
+
+    padding: 20px;
+
+    text-align: left;
+
+    border-radius: 5px;
+}
+
+.blog-post h3 {
+    margin-top: 0;
+}
+
+.blog-post a {
+    color: #3498db;
+
+    text-decoration: none;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   Website Information
+   ========================= */
+
+.website-info {
+    background-color: white;
+
+    max-width: 800px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    text-align: center;
+}
+
+.website-info h2 {
+    font-size: 30px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   Table
+   ========================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    text-align: left;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+
+    padding: 15px;
+}
+
+th {
+    background-color: #3498db;
+
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+tr:hover {
+    background-color: #eeeeee;
+}
+
+
+/* =========================
+   Blog Page Banner
+   ========================= */
+
+.blog-banner {
+    background-color: #3498db;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+.blog-banner h2 {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+.blog-banner p {
+    font-size: 18px;
+}
+
+
+/* =========================
+   Blog Page Details
+   ========================= */
+
+.blog-details {
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    padding: 0 20px;
+}
+
+
+/* =========================
+   Individual Blog Article
+   ========================= */
+
+.blog-article {
+    background-color: white;
+
+    padding: 30px;
+
+    margin-bottom: 30px;
+
+    border-radius: 5px;
+}
+
+.blog-article h2 {
+    font-size: 30px;
+
+    margin-top: 0;
+}
+
+.blog-article h3 {
+    color: #3498db;
+
+    margin-top: 25px;
+}
+
+.blog-article p {
+    line-height: 1.7;
+}
+
+.blog-date {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   Blog Lists
+   ========================= */
+
+.blog-article ul {
+    line-height: 2;
+}
+
+
+/* =========================
+   Blog Article Hover
+   ========================= */
+
+.blog-article:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   Contact Page Banner
+   ========================= */
+
+.contact-banner {
+    background-color: #3498db;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+.contact-banner h2 {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+.contact-banner p {
+    font-size: 18px;
+}
+
+
+/* =========================
+   Contact Section
+   ========================= */
+
+.contact-section {
+    background-color: white;
+
+    max-width: 600px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    border-radius: 5px;
+}
+
+.contact-section h2 {
+    text-align: center;
+
+    font-size: 30px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   Contact Form
+   ========================= */
+
+form {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* =========================
+   Form Labels
+   ========================= */
+
+label {
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   Form Inputs
+   ========================= */
+
+input {
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 4px;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   Input Focus
+   ========================= */
+
+input:focus {
+    outline: none;
+
+    border-color: #3498db;
+}
+
+
+/* =========================
+   Submit Button
+   ========================= */
+
+form button {
+    background-color: #3498db;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px;
+
+    font-size: 16px;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* =========================
+   Footer
+   ========================= */
+
+footer {
+    background-color: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 40px;
+}
