@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+/* Poppins for the whole page (the newer sections had no font-family) */
+body {
+    font-family: 'Poppins', sans-serif;
+}
 
 a {
     text-decoration: none;
@@ -151,8 +155,8 @@ a {
 
 /* team collaboration */
 
-.team-collaboration{
-    padding-bottom:268px;
+.team-collaboration {
+    padding-bottom: 268px;
 }
 
 /* padding and border-radius come from Bootstrap classes (p-4 p-lg-5 rounded-4) */
@@ -179,12 +183,10 @@ a {
 }
 
 
-
-/* decentralized */
 /* decentralized */
 .decentralized {
     background: linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 100%);
-    padding-bottom:200px;
+    padding-bottom: 200px;
 }
 
 /* font-size and line-height come from Bootstrap classes (display-5 lh-sm) */
@@ -246,56 +248,55 @@ a {
     letter-spacing: -0.02em;
 }
 
+
 /* pricing */
 
-.pricing{
+.pricing {
     padding: 100px 0;
     background-color: #00E5FF;
 }
 
-.pricing-wrapper h1{
-    font-size: 56px;
+/* font-size and line-height come from Bootstrap classes (display-4 lh-sm) */
+.pricing-wrapper h2 {
     font-weight: 700;
     color: #FFFFFF;
+    letter-spacing: -0.04em;
 }
 
-.pricing-wrapper p{
+.pricing-wrapper p {
     font-size: 18px;
     color: #FFFFFF;
 }
 
-.pricing-storage{
-    padding: 50px;
+/* padding comes from Bootstrap classes (p-4 p-md-5); no fixed height, the row centers the cards */
+.pricing-storage {
     background-color: #FFFFFF;
-    border-radius: 24px 0 0 24px;
-    height: 100%;
+    border-radius: 24px;
 }
 
-.pricing-storage h1{
-    font-size: 64px;
+/* font-size comes from Bootstrap class (display-3) */
+.pricing-price {
+    color: #0B0D0E;
     font-weight: 700;
 }
 
-.pricing-storage p{
+.pricing-storage p {
     font-size: 14px;
     color: #838696;
 }
 
-.pricing-transfer{
-    padding: 50px;
+.pricing-transfer {
     background-color: #651FFF;
     color: #FFFFFF;
-    border-radius: 0 24px 24px 0;
-    height: 100%;
+    border-radius: 24px;
 }
 
-.pricing-transfer p{
+.pricing-transfer p {
     font-size: 14px;
     color: #ECECFE;
 }
 
-
-.pricing-tag-1{
+.pricing-tag-1 {
     padding: 4px 14px;
     color: #8C5CFF;
     background-color: #ECECFE;
@@ -304,7 +305,7 @@ a {
     font-weight: 600;
 }
 
-.pricing-tag-2{
+.pricing-tag-2 {
     padding: 4px 14px;
     color: #22D3EE;
     background-color: #E0F7FA;
@@ -313,42 +314,42 @@ a {
     font-weight: 600;
 }
 
-.pricing-transfer small{
+.pricing-transfer small {
     font-size: 16px;
     font-weight: 400;
 }
 
+
 /* ===== How it works ===== */
-.works{
+.works {
     padding: 100px 0;
 }
 
-.works-wrapper h1{
-    font-size: 48px;
+/* font-size and line-height come from Bootstrap classes (display-5 lh-sm) */
+.works-wrapper h2 {
     font-weight: 700;
 }
 
-.works p{
+.works p {
     font-size: 16px;
     color: #838696;
     line-height: 28px;
 }
 
-.works h4{
+.works h4 {
     font-weight: 700;
 }
 
-
-.works-step{
+.works-step {
     position: relative;
 }
 
-.works-icon{
+.works-icon {
     width: 110px;
     height: 110px;
 }
 
-.works-line-img{
+.works-line-img {
     position: absolute;
     top: 55px;
     left: 68%;    /* start a little after the icon */
@@ -356,129 +357,88 @@ a {
     height: auto;
 }
 
-/* Vertical dashed line under steps 1 and 2 (small screens only) */
-.works-line::after{
-    content: "";
-    display: block;
+/* Vertical dashed line under steps 1 and 2.
+   Shown/hidden with Bootstrap's d-lg-none in the HTML, so no media query is needed */
+.works-vline {
     width: 0;
     height: 80px;
-    margin: 30px auto 0;
+    margin-top: 30px;
     border-left: 2px dashed #5C5F6E;
 }
 
 
-
-@media (min-width: 992px){
-    .works-line::after{
-        display: none;
-    }
-}
-
 /* ===== Ready to get started ===== */
-.started{
+.started {
     padding: 0 0 100px;
 }
 
-.started-wrapper h2{
-    font-size: 36px;
+/* font-size and line-height come from Bootstrap classes (fs-1 lh-sm) */
+.started-wrapper h2 {
     font-weight: 700;
 }
 
-.started-wrapper p{
+.started-wrapper p {
     color: #838696;
 }
 
-.started-card{
-    padding: 45px;
+/* padding comes from Bootstrap classes (p-4 p-md-5) */
+.started-card {
     border-radius: 24px;
     height: 100%;
 }
 
-.started-card-purple{
+.started-card-purple {
     background-color: #651FFF;
     color: #ECECFE;
 }
 
-.started-card-light{
+.started-card-light {
     background-color: #ECECFE;
 }
 
-.started-card h3{
+.started-card h3 {
     font-weight: 700;
 }
 
-.started-card-light p{
+.started-card-light p {
     color: #5C5F6E;
 }
 
+
 /* ===== Footer ===== */
-.footer{
+.footer {
     padding: 80px 0 30px;
     background-color: #0F1033;
     color: #FFFFFF;
 }
 
-.footer h6{
+.footer h6 {
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-.footer p{
+.footer p {
     font-size: 14px;
     line-height: 24px;
     color: #B8B8CC;
 }
 
-.footer a{
+.footer a {
     font-size: 14px;
     color: #B8B8CC;
     text-decoration: none;
 }
 
-.footer a:hover{
+.footer a:hover {
     color: #FFFFFF;
 }
 
-.footer li{
+.footer li {
     margin-bottom: 10px;
 }
 
-.footer-bottom{
+.footer-bottom {
     margin-top: 60px;
     padding-top: 30px;
     border-top: 1px solid #1A284E;
-}
-
-/* ===== Mobile ===== */
-@media (max-width: 768px){
-    .banner h1,
-    .lightning-wrapper h1,
-    .productivity-wrapper h1,
-    .storage-wrapper h1,
-    .works-wrapper h1{
-        font-size: 32px;
-        line-height: 40px;
-    }
-
-    .pricing-wrapper h1{
-        font-size: 36px;
-    }
-
-    .team h3{
-        font-size: 28px;
-        line-height: 38px;
-    }
-
-    .team-wrapper,
-    .pricing-storage,
-    .pricing-transfer,
-    .started-card{
-        padding: 30px;
-    }
-
-    .pricing-storage,
-    .pricing-transfer{
-        border-radius: 24px;
-        margin-bottom: 20px;
-    }
 }
